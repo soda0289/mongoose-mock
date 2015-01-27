@@ -28,6 +28,12 @@ var Schema = function () {
     this.save = sinon.stub();
     this.increment = sinon.stub();
     this.remove = sinon.stub();
+    this.toObject = function() {
+      return self;
+    };
+    this.toJson = function() {
+      return self;
+    };
     mongoose.emit('document', this);
   }
 
