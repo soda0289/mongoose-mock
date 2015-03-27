@@ -25,7 +25,6 @@ var Schema = function () {
         self[key] = properties[key];
       });
     }
-    this.save = sinon.stub();
     this.increment = sinon.stub();
     this.remove = sinon.stub();
     this.toObject = function() {
